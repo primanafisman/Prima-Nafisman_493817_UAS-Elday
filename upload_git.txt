@@ -1,0 +1,4 @@
+git status
+git add .
+git commit -m "Update file report and simulation"
+git push origin master
