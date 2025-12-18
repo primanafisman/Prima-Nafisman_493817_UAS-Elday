@@ -746,7 +746,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
+		(symbol "NMOS_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -756,8 +756,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "Q1"
+				(at 6.35 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -766,7 +766,7 @@
 				)
 			)
 			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+				(at 6.35 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -774,7 +774,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
 				(at 5.08 2.54 0)
 				(effects
 					(font
@@ -819,7 +819,323 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
+			(property "Sim.Pins" "2=D 1=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NMOS_1_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NMOS_1_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Simulation_SPICE:NMOS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q2"
+				(at 6.35 1.2701 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "NMOS"
+				(at 6.35 -1.2699 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, drain/source/gate"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "NMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "VDMOS"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "2=D 1=G 3=S"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -1015,7 +1331,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1033,7 +1349,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1072,23 +1388,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at -2.54 7.62 0)
+			(property "Reference" "Q3"
+				(at 5.08 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "NPN"
-				(at -2.54 5.08 0)
+				(at 5.08 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 				(at 63.5 0 0)
 				(effects
 					(font
@@ -1133,7 +1451,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=C 2=B 3=E"
+			(property "Sim.Pins" "2=C 3=B 1=E"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1259,7 +1577,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1277,7 +1595,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1295,7 +1613,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1316,23 +1634,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at -2.54 7.62 0)
+			(property "Reference" "Q4"
+				(at 5.08 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "PNP"
-				(at -2.54 5.08 0)
+				(at 5.08 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 				(at 35.56 0 0)
 				(effects
 					(font
@@ -1377,7 +1697,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=C 2=B 3=E"
+			(property "Sim.Pins" "2=C 3=B 1=E"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1479,7 +1799,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1497,7 +1817,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1515,7 +1835,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1683,6 +2003,12 @@
 		(uuid "75365f4a-b470-4401-8fbb-7c9f6d1accc0")
 	)
 	(junction
+		(at 153.67 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96a5cf6d-12a3-4c43-bd25-a6162fb7a280")
+	)
+	(junction
 		(at 91.44 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1699,12 +2025,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb02cbbe-7a47-4831-aae2-3f06dc00d893")
-	)
-	(junction
-		(at 153.67 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb2f333a-dcc9-40ba-a7f1-19c22bdc3c6c")
 	)
 	(junction
 		(at 168.91 31.75)
@@ -1804,16 +2124,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 38.1) (xy 44.45 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5925a8c2-3596-41c4-9162-bd7c63911e7a")
-	)
-	(wire
-		(pts
 			(xy 141.986 38.1) (xy 139.7 38.1)
 		)
 		(stroke
@@ -1894,16 +2204,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 35.56) (xy 153.67 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81549552-d5a2-4226-886d-f971a45b5aef")
-	)
-	(wire
-		(pts
 			(xy 124.46 33.02) (xy 127 33.02)
 		)
 		(stroke
@@ -1924,6 +2224,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 40.64) (xy 44.45 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b042418-7ac2-4ebf-b741-6ca1fe51eac0")
+	)
+	(wire
+		(pts
 			(xy 91.44 30.48) (xy 91.44 31.75)
 		)
 		(stroke
@@ -1941,6 +2251,16 @@
 			(type default)
 		)
 		(uuid "9e4d27bb-b04e-4ffe-b127-89637e72ddf5")
+	)
+	(wire
+		(pts
+			(xy 44.45 38.1) (xy 48.26 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e7fa370-0122-4e7e-a246-78ff96d66d67")
 	)
 	(wire
 		(pts
@@ -1974,7 +2294,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 38.1) (xy 45.72 20.32)
+			(xy 45.72 20.32) (xy 45.72 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2054,13 +2374,13 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 40.64) (xy 44.45 40.64)
+			(xy 153.67 35.56) (xy 153.67 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ea0c2d23-79c8-4831-87c9-47178c028f23")
+		(uuid "edc3f155-1cc2-4120-bded-5065bf273ccc")
 	)
 	(wire
 		(pts
@@ -2192,7 +2512,7 @@
 	)
 	(global_label "Vg"
 		(shape input)
-		(at 45.72 40.64 0)
+		(at 48.26 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2200,9 +2520,9 @@
 			)
 			(justify left)
 		)
-		(uuid "b10dfc2f-fcd5-4208-8a30-8e6dbcdc9353")
+		(uuid "9e1ff9bf-7cd3-4d90-9bc8-fb39a112f682")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.9428 40.64 0)
+			(at 53.4828 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2307,7 +2627,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
+		(property "Sim.Pins" "2=C 3=B 1=E"
 			(at 151.13 45.72 0)
 			(effects
 				(font
@@ -2407,7 +2727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
+		(property "Sim.Pins" "2=C 3=B 1=E"
 			(at 151.13 30.48 0)
 			(effects
 				(font
@@ -2775,6 +3095,7 @@
 		)
 	)
 	(symbol
+		(lib_name "NMOS_1")
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 88.9 36.83 0)
 		(unit 1)
@@ -2847,7 +3168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
+		(property "Sim.Pins" "2=D 1=G 3=S"
 			(at 88.9 52.07 0)
 			(effects
 				(font
@@ -2947,7 +3268,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
+		(property "Sim.Pins" "2=D 1=G 3=S"
 			(at 166.37 53.34 0)
 			(effects
 				(font
