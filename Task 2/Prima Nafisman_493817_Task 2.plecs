@@ -55,7 +55,7 @@ Plecs {
   Schematic {
     Location      [0, 26; 1280, 684]
     ZoomFactor    1.49863
-    SliderPosition [1745, -1]
+    SliderPosition [1745, 225]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -1832,25 +1832,6 @@ Plecs {
       Flipped       off
       LabelPosition west
     }
-    Component {
-      Type          Inductor
-      Name          "L1"
-      Show          on
-      Position      [1395, 340]
-      Direction     down
-      Flipped       off
-      LabelPosition west
-      Parameter {
-        Variable      "L"
-        Value         "0.001"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
     Connection {
       Type          Wire
       SrcComponent  "Am1"
@@ -2521,4 +2502,4 @@ Plecs {
     }
   }
 }
-DemoSignature "PH5gvK4m0IOniAvpg5MT1sMudPlxH7MR42IrwI6Y84I="
+DemoSignature "V2Bj06L1Die05FLCR/73VUzJbry1GOMxNxXpYQOtGjc="
