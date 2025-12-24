@@ -1,0 +1,24 @@
+* C:\Users\Prima Nafisman\Documents\Tugas Kuliah\Elday\Prima Nafisman_493817_UAS Elday\Task 1\Prima Nafisman_493817_Task_1.asc
+MOSFET Vdrain Vgate 0 0 IRFZ44N
+Vd N003 0 24
+Vgg N006 0 PULSE(0 12 1u 100n 100n 10u 20u)
+Rg Vgate N006 47
+RL N003 Vdrain 10
+Cd N003 0 100µ
+Q§PNP N001 N004 Vgate_totem 0 2N2222
+Q§NPN Vgate_totem N004 0 0 2N2907
+MOSFET_Totem Vdrain_totem Vgate_totem 0 0 IRFZ44N
+Rg1 N004 N005 47
+RL1 N002 Vdrain_totem 10
+Vpwm N005 0 PULSE(0 12 1u 100n 100n 10u 20u)
+Vd1 N001 0 12
+VL N002 0 24
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Prima Nafisman\AppData\Local\LTspice\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Prima Nafisman\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 50u
+.backanno
+.end
